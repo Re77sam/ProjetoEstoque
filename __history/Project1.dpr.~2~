@@ -1,0 +1,18 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  UnitPrincipal2 in 'UnitPrincipal2.pas' {Form1},
+  UnitCadMovimentacao in 'UnitCadMovimentacao.pas',
+  UnitDM in 'UnitDM.pas',
+  UnitConMovimentacao in 'UnitConMovimentacao.pas',
+  UnitCadProdutos in 'UnitCadProdutos.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
